@@ -241,12 +241,12 @@ button{
     animation: bounceTop 5s ease-in-out infinite;
 }
 .bg-circles .circle-3{
-    height: 60px;
-    width: 60px;
-    background-color: var(--blue);
-    left: 5%;
-    top: 10%;
-    opacity: 0.3;
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    top: 40%;
+    right: -60px;
+    opacity: 0.6;
 }
 .bg-circles .circle-4{
      height: 50px;
