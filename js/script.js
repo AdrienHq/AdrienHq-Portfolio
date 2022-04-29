@@ -5,8 +5,8 @@ window.addEventListener("load", () => {
 
     document.querySelector(".page-loader").classList.add("fade-out");
     setTimeout(() => {
-        document.querySelector(".page-loader").style.display
-    },900);
+        document.querySelector(".page-loader").style.display = "none";
+    },600);
 })
 
 const navToggler = document.querySelector(".nav-toggler");
