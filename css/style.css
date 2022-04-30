@@ -9,13 +9,13 @@
 }
 
 :root{
-    --main-color: #e02f6b;
+    --main-color: #5D5C61;
     --blue: #0000ff;
     --blue-dark: #18293c;
     --orange: #ffa500;
     --green-yellow: #cddc39;
-    --pink-light: #efa2b4;
-    --cyan-light: #aef1ee;
+    --pink-light: #557A95;
+    --cyan-light: #7395AE;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
@@ -440,7 +440,7 @@ button{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 50%;
+    height: 75%;
     width: 0;
     background-color: var(--white-alpha-25);
     z-index: -1;
