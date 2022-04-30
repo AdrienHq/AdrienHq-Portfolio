@@ -713,49 +713,27 @@ button{
     text-transform: lowercase;
     color: var(--main-color);
 }
-.contact-form,
 .contact-info{
-    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
     padding: 0 15px;
-}
-.contact-form .input-group{
-    width: 100%;
-    margin-bottom: 30px;
-}
-.contact-form .input-control::placeholder{
-    color: var(--blue-dark);
-    opacity: 0.8;
-    font-weight: 300;
-}
-.contact-form .input-control{
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: var(--white-alpha-25);
-    padding: 0 20px;
-    color: var(--blue-dark);
-    border: 1px solid transparent;
-    transition: border-left-color 0.3s ease;
-}
-.contact-form .input-control:focus{
-    border-color: var(--white-alpha-40);
-
-}
-.contact-form textarea.input-control{
-    height: 120px;
 }
 .contact-info-item{
     margin: 0 0 30px;
     padding: 0 0 0 20px;
 }
 .contact-info-item h3{
-    font-size: 20px;
+    font-size: 25px;
     text-transform: capitalize;
     margin: 0 0 5px;
+}
+.contact-info-item a{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+    text-decoration: none;
+    color: inherit;
 }
 .contact-info-item .social-links a{
     display: inline-flex;
@@ -764,7 +742,6 @@ button{
     height: 40px;
     width: 40px;
     background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
     color: var(--main-color);
     border-radius: 50%;
     margin: 6px 4px 0 0;
@@ -774,7 +751,6 @@ button{
     color: var(--white);
     background-color: var(--main-color);
 }
-
 @media(max-width: 991px){
     .container{
         padding: 0;
@@ -801,7 +777,6 @@ button{
 }
 
 @media(max-width: 767px){
-    .contact-form,
     .contact-info,
     .about-img,
     .about-text{
