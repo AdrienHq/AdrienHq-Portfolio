@@ -9,19 +9,18 @@
 }
 
 :root{
-    --main-color: #5D5C61;
-    --blue: #0000ff;
+    --main-color: #16123f;
+    --blue: #16123f;
     --blue-dark: #18293c;
     --orange: #ffa500;
     --green-yellow: #cddc39;
-    --pink-light: #557A95;
-    --cyan-light: #7395AE;
+    --pink-light: #abd699;
+    --cyan-light: #75c9b7;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
-    --background-filter-blur: blur(5px);
+    --background-filter-blur: blur(1px);
 }
-
 
 *{
     box-sizing: border-box;
@@ -58,7 +57,7 @@ body::before{
     width: 100%;
     background-color: var(--green-yellow);
     z-index: -1;
-    opacity: 0.12;
+    opacity: 0.01;
 }
 a{
     text-decoration: none;
