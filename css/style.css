@@ -9,12 +9,12 @@
 }
 
 :root{
-    --main-color: #16123f;
+    --main-color: #0a192f;
     --blue: #16123f;
     --blue-dark: #18293c;
     --orange: #ffa500;
-    --green-yellow: #cddc39;
-    --pink-light: #abd699;
+    --green-yellow: #112240;
+    --pink-light: #233554;
     --cyan-light: #75c9b7;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
