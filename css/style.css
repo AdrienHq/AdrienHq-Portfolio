@@ -826,6 +826,39 @@ button{
     color: var(--white);
     background-color: var(--main-color);
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 30px;
+}
+.grid-item {
+    background-color: var(--pink-light);
+}
+.grid-img{
+    position: relative;
+    overflow: hidden;
+}
+.grid-img img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+.grid-item:hover .grid-img img{
+    transform: scale(1.1);
+    filter: brightness(60%) grayscale(100%);
+
+}
+.grid-text{
+    padding: 20px 15px ;
+    text-align: center;
+}
+.grid-text h3{
+    color: var(--cyan-light);
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 0 5px;
+    font-size: 20px;
+}
 @media(max-width: 991px){
     .container{
         padding: 0;
