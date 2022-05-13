@@ -828,8 +828,8 @@ button{
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(5, minmax(190px, 1fr));
+    grid-gap: 45px;
 }
 .grid-item {
     background-color: var(--pink-light);
@@ -846,7 +846,6 @@ button{
 .grid-item:hover .grid-img img{
     transform: scale(1.1);
     filter: brightness(60%) grayscale(100%);
-
 }
 .grid-text{
     padding: 20px 15px ;
