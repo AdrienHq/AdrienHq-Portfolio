@@ -927,8 +927,6 @@ button{
     color: var(--main-color);
 }
 
-
-
 @media(max-width: 991px){
     .container{
         padding: 0;
@@ -969,6 +967,12 @@ button{
     .pp-inner{
         padding: 30px 15px;
     }
+    .project-item{
+        width: calc(100% - 30px);
+    }
+    .pp-project-inner{
+        padding: 30px 15px;
+    }
     .contact-info{
         order: -1;
         margin-bottom: 15px;
@@ -990,6 +994,9 @@ button{
         font-size: 18px;
     }
     .pp-header{
+        font-size: 20px;
+    }
+    .pp-project-header{
         font-size: 20px;
     }
 }
