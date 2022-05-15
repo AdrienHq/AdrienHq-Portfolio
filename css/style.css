@@ -714,13 +714,67 @@ button{
     padding-top: 5px;
     padding-bottom: 15px;
 }
+/*.portfolio-item-thumbnail{*/
+/*    padding: 10px;*/
+/*    background-color: var(--white-alpha-25);*/
+/*}*/
+/*.portfolio-item-thumbnail img{*/
+/*    height: 215px;*/
+/*    width: 10px;*/
+/*    position: relative;*/
+/*}*/
 .portfolio-item-thumbnail{
-    padding: 10px;
-    background-color: var(--white-alpha-25);
+    width: 100%;
+    height: 215px;
+    position: relative;
 }
 .portfolio-item-thumbnail img{
-    height: 215px;
     width: 100%;
+    height: 215px;
+    position: relative;
+}
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+.carousel-button:hover,
+.carousel-button:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+.carousel-button.prev{
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
+.slide{
+     position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.slide > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.slide[data-active]{
+    opacity: 1;
 }
 .portfolio-item-details{
     display: none;
