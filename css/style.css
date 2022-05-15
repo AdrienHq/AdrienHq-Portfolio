@@ -702,8 +702,15 @@ button{
     padding-bottom: 50px;
 }
 .portfolio-item{
+    font-family: "CenturyGothic", sans-serif;
+    text-align: center;
     width: calc((100% / 3) - 30px);
     margin: 0 15px 30px;
+}
+.portfolio-item-title{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 .portfolio-item-thumbnail{
     padding: 10px;
@@ -841,6 +848,7 @@ button{
     outline: .1rem solid var(--white-alpha-25);
     outline-offset: -1.5rem;
     cursor: pointer;
+    transition: ease .3s;
 }
 .container .project-container .project-item:hover{
     outline: .2rem solid var(--orange);
@@ -904,7 +912,24 @@ button{
     top: -40px;
 }
 .pp-project-thumbnail{
+    justify-content: center;
+    max-height: 500px;
+    max-width: 500px;
     border-radius: 10px;
+}
+.project-item-title{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.view-project-item-btn{
+    border-color: var(--main-color);
+    transition: ease .3s;
+}
+.view-project-item-btn:hover{
+    text-transform: capitalize;
+    color: var(--orange);
+    border-radius: 1px;
+    border-color: var(--orange);
 }
 .pp-project-header{
     font-size: 25px;
