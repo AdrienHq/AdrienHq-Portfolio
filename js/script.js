@@ -88,3 +88,36 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".pp-body").innerHTML =
         portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
+
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("view-project-item-btn")){
+        toggleProjectPopup();
+        document.querySelector(".project-popup").scrollTo(0,0);
+        projectItemDetails(e.target.parentElement);
+    }
+})
+function toggleProjectPopup(){
+    document.querySelector(".project-popup").classList.toggle("open");
+    document.body.classList.toggle("hide-scrolling");
+    document.querySelector(".main").classList.toggle("fade-out");
+}
+document.querySelector(".pp-project-close").addEventListener("click", toggleProjectPopup);
+
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("pp-project-inner")){
+        toggleProjectPopup();
+    }
+})
+
+function projectItemDetails(projectItem){
+    document.querySelector(".pp-project-thumbnail img").src =
+        projectItem.querySelector(".project-item-thumbnail img").src;
+
+    document.querySelector(".pp-project-header h3").innerHTML =
+        projectItem.querySelector(".project-item-title").innerHTML;
+
+    document.querySelector(".pp-project-body").innerHTML =
+        projectItem.querySelector(".project-item-details").innerHTML;
+}
+
+
