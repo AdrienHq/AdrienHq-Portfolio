@@ -780,6 +780,39 @@ button{
     z-index: 1;
     transition-delay: 0ms;
 }
+.pp-slide{
+    position: relative;
+    overflow: hidden;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+.pp-slide > img{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*object-fit: cover;*/
+    /*object-position: center;*/
+}
+.pp-slide[data-active]{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 1;
+    z-index: -1;
+    transition-delay: 0ms;
+}
+.pp-header,
+.pp-body{
+    max-width: 50%;
+    /*position: absolute;*/
+    top: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0.9;
+}
 .portfolio-item-details{
     display: none;
 }
@@ -814,13 +847,13 @@ button{
     opacity: 0;
     transform: scale(0.9);
 }
+.pp-close{
+    z-index: 1;
+}
 .portfolio-popup.open .pp-content{
     opacity: 1;
     transform: scale(1);
     transition: all 0.5s ease;
-}
-.pp-header{
-    position: relative;
 }
 .pp-header .btn{
     height: 40px;
@@ -830,10 +863,10 @@ button{
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -40px;
-    top: -40px;
+    right: -10px;
+    top: -10px;
 }
-.pp-thumbnail{
+.pp-portfolio-item-thumbnail{
     border-radius: 10px;
 }
 .pp-header{
