@@ -736,30 +736,29 @@ button{
 .carousel-button{
     position: absolute;
     z-index: 2;
-    background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1rem;
     top: 50%;
     transform: translateY(-50%);
     color: var(--main-color);
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .09);
 }
 .carousel-button:hover,
 .carousel-button:focus{
     color: white;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
 }
 .carousel-button:focus{
     outline: 1px solid black;
 }
 .carousel-button.prev{
-    left: 1rem;
+    left: 0.5rem;
 }
 .carousel-button.next{
-    right: 1rem;
+    right: 0.5rem;
 }
 .slide{
     position: absolute;
