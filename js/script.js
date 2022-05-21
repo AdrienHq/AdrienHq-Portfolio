@@ -58,36 +58,6 @@ tabsContainer.addEventListener("click", (e) =>{
     }
 });
 
-document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("view-project-btn")){
-        togglePortfolioPopup();
-        document.querySelector(".portfolio-popup").scrollTo(0,0);
-        portfolioItemDetails(e.target.parentElement);
-    }
-})
-function togglePortfolioPopup(){
-    document.querySelector(".portfolio-popup").classList.toggle("open");
-    document.body.classList.toggle("hide-scrolling");
-    document.querySelector(".main").classList.toggle("fade-out");
-}
-document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
-
-document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("pp-inner")){
-        togglePortfolioPopup();
-    }
-})
-
-function portfolioItemDetails(portfolioItem){
-    document.querySelectorAll(".pp-slide img").src =
-        portfolioItem.querySelectorAll(".slide img").src;
-
-    document.querySelector(".pp-header h3").innerHTML =
-        portfolioItem.querySelector(".portfolio-item-title").innerHTML;
-
-    document.querySelector(".pp-body").innerHTML =
-        portfolioItem.querySelector(".portfolio-item-details").innerHTML;
-}
 
 document.addEventListener("click", (e) => {
     if(e.target.classList.contains("view-project-item-btn")){
@@ -120,23 +90,35 @@ function projectItemDetails(projectItem){
         projectItem.querySelector(".project-item-details").innerHTML;
 }
 
-const buttons = document.querySelectorAll("[data-carousel-button]")
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const offset = button.dataset.carouselButton === "next" ? 1 : -1
-        const slides = button
-            .closest("[data-carousel]")
-            .querySelector("[data-slides]")
-
-        const activeSlide = slides.querySelector("[data-active]")
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if(newIndex < 0) newIndex = slides.children.length -1
-        if(newIndex >= slides.children.length) newIndex = 0
-
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
-    })
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("view-project-btn")){
+        togglePortfolioPopup();
+        document.querySelector(".portfolio-popup").scrollTo(0,0);
+        portfolioItemDetails(e.target.parentElement);
+    }
 })
+function togglePortfolioPopup(){
+    document.querySelector(".portfolio-popup").classList.toggle("open");
+    document.body.classList.toggle("hide-scrolling");
+    document.querySelector(".main").classList.toggle("fade-out");
+}
+document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("pp-inner")){
+        togglePortfolioPopup();
+    }
+})
+
+function portfolioItemDetails(portfolioItem){
+    document.querySelectorAll(".pp-slide img").src =
+        portfolioItem.querySelectorAll(".slide img").src;
+
+    document.querySelector(".pp-header h3").innerHTML =
+        portfolioItem.querySelector(".portfolio-item-title").innerHTML;
+
+    document.querySelector(".pp-body").innerHTML =
+        portfolioItem.querySelector(".portfolio-item-details").innerHTML;
+}
 
 
