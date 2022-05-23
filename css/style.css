@@ -730,7 +730,7 @@ button{
 }
 .pp-header,
 .pp-body{
-    max-width: 50%;
+    max-width: 100%;
     /*position: absolute;*/
     top: 50%;
     left: 0;
@@ -942,7 +942,8 @@ button{
     border-radius: 10px;
 }
 .pp-thumbnail img{
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     max-height: 100%;
     max-width: 100%;
     border-radius: 4px;
